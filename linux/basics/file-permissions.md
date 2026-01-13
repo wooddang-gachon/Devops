@@ -28,13 +28,16 @@ Command:
 Example Output:
   -rw-r--r-- 1 user group 1234 Jan 1 file.txt
 
-Permission Meaning:
-  - rw- r-- r--
-  |  |   |   |
-  |  |   |   └─ Others permissions
-  |  |   └──── Group permissions
-  |  └──────── Owner permissions
-  └─────────── File type
+### Permission Meaning
+
+```text
+-rw-r--r--
+│ │  │  │
+│ │  │  └── Others permissions (r--)
+│ │  └───── Group permissions (r--)
+│ └──────── Owner permissions (rw-)
+└────────── File type (-)
+```
 
 --------------------------------------------------
 
