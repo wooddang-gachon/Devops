@@ -2,7 +2,6 @@ name: Basic CI
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
 
 jobs:
@@ -14,5 +13,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run basic check
-        run: |
-          echo "CI workflow is running successfully!"
+        run: echo "CI workflow is running successfully!"
